@@ -47,6 +47,26 @@
 .sidebar .nav-link:hover { background: rgba(255, 255, 255, .08); color: #fff; }
 .sidebar .nav-link.active { background: var(--sidebar-active); color: #fff; }
 
+.topbar {
+  height: var(--topbar-height);
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.user-info { display: flex; align-items: center; gap: 0.714rem; }
+.user-info .user-name { font-size: var(--fs-sm); font-weight: 600; line-height: 1.2; }
+.user-info .user-role { font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.2; }
+
+.page-body { padding: 1.714rem 2rem 2.286rem; }
+.page-title { font-size: var(--fs-lg); font-weight: 700; margin-bottom: 0.143rem; }
+.page-subtitle { font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: 1.429rem; }
 
 
 
