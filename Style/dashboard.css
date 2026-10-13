@@ -1,6 +1,3 @@
-/* =========================================================
-   dashboard.css  —  خاص بصفحات الداشبورد (كروت الإحصائيات)
-   ========================================================= */
 
 .stat-card {
   display: flex;
@@ -24,7 +21,6 @@
 .stat-label { font-size: var(--fs-xs); color: var(--text-muted); font-weight: 500; }
 .stat-value { font-size: var(--fs-xl); font-weight: 700; line-height: 1.1; margin-top: 0.143rem; }
 
-/* كارد الجدول بدون padding عشان الجدول ياخد العرض كامل */
 .table-card { padding: 0; overflow: hidden; }
 .table-card .card-head {
   padding: 1rem 1.429rem;

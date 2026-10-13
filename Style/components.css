@@ -1,8 +1,4 @@
-/* =========================================================
-   components.css  —  عناصر مشتركة: كروت، badges، جداول، أزرار، فورم
-   ========================================================= */
 
-/* ---------- Card ---------- */
 .card-box {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -16,7 +12,6 @@
   margin-bottom: 0.857rem;
 }
 
-/* ---------- Avatar ---------- */
 .avatar {
   width: 2.429rem; height: 2.429rem;
   border-radius: 50%;
@@ -28,7 +23,6 @@
   flex-shrink: 0;
 }
 
-/* ---------- Badges (Priority + Status) ---------- */
 .badge-priority,
 .badge-status {
   display: inline-block;
@@ -47,7 +41,6 @@
 .status-inprogress { background: var(--progress-bg); color: var(--progress-text); }
 .status-resolved   { background: var(--resolved-bg); color: var(--resolved-text); }
 
-/* ---------- Table ---------- */
 .table-custom {
   width: 100%;
   margin: 0;
@@ -73,7 +66,6 @@
 .table-custom tbody tr:hover td { background: var(--row-hover); }
 .table-custom .ticket-id { color: var(--text-muted); font-weight: 500; }
 
-/* ---------- Buttons ---------- */
 .btn-primary-custom {
   background: var(--primary);
   color: #fff;
@@ -100,7 +92,6 @@
 .link-primary-custom { color: var(--primary); font-size: var(--fs-sm); font-weight: 600; }
 .link-primary-custom:hover { color: var(--primary-hover); }
 
-/* ---------- Forms ---------- */
 .form-label { font-size: var(--fs-sm); font-weight: 600; margin-bottom: 0.429rem; }
 .form-control, .form-select {
   font-size: var(--fs-sm);

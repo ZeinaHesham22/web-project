@@ -1,8 +1,5 @@
-/* =========================================================
-   layout.css  —  السايدبار + الـ Topbar + منطقة المحتوى
-   ========================================================= */
 
-/* ---------- Sidebar ---------- */
+/* Sidebar */
 .sidebar {
   position: fixed;
   inset: 0 auto 0 0;
@@ -52,13 +49,13 @@
 .sidebar .nav-link:hover { background: rgba(255, 255, 255, .08); color: #fff; }
 .sidebar .nav-link.active { background: var(--sidebar-active); color: #fff; }
 
-/* ---------- Main ---------- */
+/*  Main  */
 .main-content {
   margin-left: var(--sidebar-width);
   min-height: 100vh;
 }
 
-/* ---------- Topbar ---------- */
+/* Topbar */
 .topbar {
   height: var(--topbar-height);
   background: var(--card-bg);
@@ -76,12 +73,11 @@
 .user-info .user-name { font-size: var(--fs-sm); font-weight: 600; line-height: 1.2; }
 .user-info .user-role { font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.2; }
 
-/* ---------- Page body ---------- */
 .page-body { padding: 1.714rem 2rem 2.286rem; }
 .page-title { font-size: var(--fs-lg); font-weight: 700; margin-bottom: 0.143rem; }
 .page-subtitle { font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: 1.429rem; }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 767.98px) {
   :root { --sidebar-width: 4.571rem; }
   .sidebar .brand span,
