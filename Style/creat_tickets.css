@@ -1,3 +1,57 @@
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sidebar-width);
+  background: var(--navy);
+  color: #fff;
+  padding: 1.286rem 0.857rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.714rem;
+  padding: 0.286rem 0.571rem 1.429rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 2.286rem; height: 2.286rem;
+  border-radius: 0.571rem;
+  background: var(--primary);
+  display: grid; place-items: center;
+  font-size: 1.214rem;
+  flex-shrink: 0;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.786rem;
+  padding: 0.643rem 0.857rem;
+  border-radius: 0.571rem;
+  color: #b9cdee;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: background .15s, color .15s;
+}
+.sidebar .nav-link i { font-size: 1.071rem; width: 1.286rem; text-align: center; }
+.sidebar .nav-link:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+.sidebar .nav-link.active { background: var(--sidebar-active); color: #fff; }
+
+
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
