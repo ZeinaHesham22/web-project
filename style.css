@@ -197,7 +197,15 @@ textarea {
     background-color: #1d4ed8;
 }
 
-
+@media (max-width: 767.98px) {
+  :root { --sidebar-width: 4.571rem; }
+  .sidebar .brand span,
+  .sidebar .nav-link span { display: none; }
+  .sidebar .brand { justify-content: center; padding-inline: 0; }
+  .sidebar .nav-link { justify-content: center; }
+  .page-body { padding: 1.286rem 1.143rem 2rem; }
+  .topbar { padding: 0 1.143rem; }
+}
 
 @media (max-width: 600px) {
     .row {
