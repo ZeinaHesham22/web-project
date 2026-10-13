@@ -1,0 +1,37 @@
+/* =========================================================
+   dashboard.css  —  خاص بصفحات الداشبورد (كروت الإحصائيات)
+   ========================================================= */
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.143rem 1.286rem;
+}
+
+.stat-icon {
+  width: 3rem; height: 3rem;
+  border-radius: 0.714rem;
+  display: grid; place-items: center;
+  font-size: 1.357rem;
+  flex-shrink: 0;
+}
+.stat-icon.total    { background: #e7f0ff; color: #1a6dff; }
+.stat-icon.open     { background: #fee8e8; color: #e03131; }
+.stat-icon.inprogress { background: #fff3d6; color: #d9930d; }
+.stat-icon.resolved { background: #e3f6ea; color: #1f9d55; }
+
+.stat-label { font-size: var(--fs-xs); color: var(--text-muted); font-weight: 500; }
+.stat-value { font-size: var(--fs-xl); font-weight: 700; line-height: 1.1; margin-top: 0.143rem; }
+
+/* كارد الجدول بدون padding عشان الجدول ياخد العرض كامل */
+.table-card { padding: 0; overflow: hidden; }
+.table-card .card-head {
+  padding: 1rem 1.429rem;
+  border-bottom: 1px solid var(--border);
+}
+.table-card .card-head .card-title { margin: 0; }
+.table-card .card-foot {
+  padding: 0.857rem 1.429rem;
+  border-top: 1px solid var(--border);
+}

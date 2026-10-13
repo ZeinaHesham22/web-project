@@ -1,0 +1,93 @@
+/* =========================================================
+   layout.css  —  السايدبار + الـ Topbar + منطقة المحتوى
+   ========================================================= */
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sidebar-width);
+  background: var(--navy);
+  color: #fff;
+  padding: 1.286rem 0.857rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.714rem;
+  padding: 0.286rem 0.571rem 1.429rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 2.286rem; height: 2.286rem;
+  border-radius: 0.571rem;
+  background: var(--primary);
+  display: grid; place-items: center;
+  font-size: 1.214rem;
+  flex-shrink: 0;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.786rem;
+  padding: 0.643rem 0.857rem;
+  border-radius: 0.571rem;
+  color: #b9cdee;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: background .15s, color .15s;
+}
+.sidebar .nav-link i { font-size: 1.071rem; width: 1.286rem; text-align: center; }
+.sidebar .nav-link:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+.sidebar .nav-link.active { background: var(--sidebar-active); color: #fff; }
+
+/* ---------- Main ---------- */
+.main-content {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+}
+
+/* ---------- Topbar ---------- */
+.topbar {
+  height: var(--topbar-height);
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.user-info { display: flex; align-items: center; gap: 0.714rem; }
+.user-info .user-name { font-size: var(--fs-sm); font-weight: 600; line-height: 1.2; }
+.user-info .user-role { font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.2; }
+
+/* ---------- Page body ---------- */
+.page-body { padding: 1.714rem 2rem 2.286rem; }
+.page-title { font-size: var(--fs-lg); font-weight: 700; margin-bottom: 0.143rem; }
+.page-subtitle { font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: 1.429rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767.98px) {
+  :root { --sidebar-width: 4.571rem; }
+  .sidebar .brand span,
+  .sidebar .nav-link span { display: none; }
+  .sidebar .brand { justify-content: center; padding-inline: 0; }
+  .sidebar .nav-link { justify-content: center; }
+  .page-body { padding: 1.286rem 1.143rem 2rem; }
+  .topbar { padding: 0 1.143rem; }
+}
