@@ -3,10 +3,16 @@
 .create-user-page {
     width: 100%;
     min-width: 0;
+    box-sizing: border-box;
+}
+
+.create-user-page,
+.create-user-page * {
+    box-sizing: border-box;
 }
 
 .create-user-page .page-title {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
 }
 
 .create-user-page .page-subtitle {
@@ -18,10 +24,11 @@
     width: 100%;
     max-width: 900px;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 0.75rem;
-    overflow: hidden;
 }
 
 .create-user-card .card-head {
@@ -36,12 +43,12 @@
 }
 
 .create-user-card .card-description {
-    margin-top: 0.35rem;
+    margin: 0.4rem 0 0;
     color: var(--text-muted);
     font-size: var(--fs-sm);
 }
 
-/* Form */
+/* Form Grid */
 .create-user-form {
     padding: 1.5rem;
 }
@@ -62,21 +69,21 @@
 .create-user-form label {
     font-size: var(--fs-sm);
     font-weight: 600;
+    color: var(--text);
 }
 
 .create-user-form input,
 .create-user-form select {
     width: 100%;
     min-width: 0;
-    min-height: 44px;
-    padding: 0.7rem 0.85rem;
+    height: 44px;
+    padding: 0.65rem 0.85rem;
     border: 1px solid var(--border);
     border-radius: 0.45rem;
     background: var(--card-bg);
     color: var(--text);
-    font: inherit;
+    font-family: inherit;
     font-size: var(--fs-sm);
-    box-sizing: border-box;
 }
 
 .create-user-form input:focus,
@@ -86,11 +93,18 @@
     box-shadow: 0 0 0 3px rgba(26, 109, 255, 0.12);
 }
 
+.create-user-form input[readonly] {
+    background: var(--bg);
+    color: var(--text-muted);
+}
+
 .create-user-form .field-hint {
     color: var(--text-muted);
     font-size: var(--fs-xs);
+    line-height: 1.5;
 }
 
+/* Actions */
 .create-user-form .form-actions {
     display: flex;
     justify-content: flex-end;
@@ -102,10 +116,14 @@
 
 .create-user-form .btn-cancel,
 .create-user-form .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     min-height: 42px;
     padding: 0.65rem 1.15rem;
     border-radius: 0.45rem;
-    font: inherit;
+    font-family: inherit;
     font-size: var(--fs-sm);
     font-weight: 600;
     cursor: pointer;
@@ -127,6 +145,21 @@
     background: var(--primary-hover);
 }
 
+/* User avatar in topbar */
+.create-user-page ~ .user-avatar,
+.user-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 767.98px) {
     .create-user-card {
@@ -138,7 +171,7 @@
     }
 
     .create-user-form .form-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 1rem;
     }
 
