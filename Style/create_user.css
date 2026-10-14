@@ -1,181 +1,23 @@
-/* Create User Page */
-
-.create-user-page {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-}
-
-.create-user-page,
-.create-user-page * {
-    box-sizing: border-box;
-}
-
-.create-user-page .page-title {
-    margin-bottom: 0.25rem;
-}
-
-.create-user-page .page-subtitle {
-    margin-bottom: 1.5rem;
-}
-
-/* Form Card */
-.create-user-card {
-    width: 100%;
-    max-width: 900px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-}
-
-.create-user-card .card-head {
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.create-user-card .card-title {
-    margin: 0;
-    font-size: var(--fs-md);
-    font-weight: 600;
-}
-
-.create-user-card .card-description {
-    margin: 0.4rem 0 0;
-    color: var(--text-muted);
-    font-size: var(--fs-sm);
-}
-
-/* Form Grid */
-.create-user-form {
-    padding: 1.5rem;
-}
-
-.create-user-form .form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem 1.5rem;
-}
-
-.create-user-form .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    min-width: 0;
-}
-
-.create-user-form label {
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: var(--text);
-}
-
-.create-user-form input,
-.create-user-form select {
-    width: 100%;
-    min-width: 0;
-    height: 44px;
-    padding: 0.65rem 0.85rem;
-    border: 1px solid var(--border);
-    border-radius: 0.45rem;
-    background: var(--card-bg);
-    color: var(--text);
-    font-family: inherit;
-    font-size: var(--fs-sm);
-}
-
-.create-user-form input:focus,
-.create-user-form select:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(26, 109, 255, 0.12);
-}
-
-.create-user-form input[readonly] {
-    background: var(--bg);
-    color: var(--text-muted);
-}
-
-.create-user-form .field-hint {
-    color: var(--text-muted);
-    font-size: var(--fs-xs);
-    line-height: 1.5;
-}
-
-/* Actions */
-.create-user-form .form-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.75rem;
-    margin-top: 1.75rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--border);
-}
-
-.create-user-form .btn-cancel,
-.create-user-form .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    min-height: 42px;
-    padding: 0.65rem 1.15rem;
-    border-radius: 0.45rem;
-    font-family: inherit;
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.create-user-form .btn-cancel {
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    color: var(--text);
-}
-
-.create-user-form .btn-primary {
-    border: 1px solid var(--primary);
-    background: var(--primary);
-    color: #fff;
-}
-
-.create-user-form .btn-primary:hover {
-    background: var(--primary-hover);
-}
-
-/* User avatar in topbar */
-.create-user-page ~ .user-avatar,
-.user-avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    flex-shrink: 0;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--primary);
-    color: #fff;
-    font-size: var(--fs-sm);
-    font-weight: 600;
-}
-
-/* Responsive */
-@media (max-width: 767.98px) {
-    .create-user-card {
-        max-width: 100%;
-    }
-
-    .create-user-form {
-        padding: 1rem;
-    }
-
-    .create-user-form .form-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 1rem;
-    }
-
-    .create-user-form .form-actions {
-        flex-wrap: wrap;
-    }
-}
+/* Create User page: shared design system from IT Dashboard. */
+.create-user-page { width: 100%; min-width: 0; }
+.create-user-page .page-title { margin-bottom: .143rem; }
+.create-user-page .page-subtitle { margin-bottom: 1.429rem; }
+.create-user-card { max-width: 900px; padding: 0; overflow: hidden; }
+.create-user-card .card-head { padding: 1rem 1.429rem; border-bottom: 1px solid var(--border); }
+.create-user-card .card-title { margin: 0; font-size: var(--fs-md); font-weight: 600; }
+.create-user-card .card-description { margin-top: .4rem; color: var(--text-muted); font-size: var(--fs-sm); }
+.required-mark { color: #e03131; }
+.create-user-form { padding: 1.5rem 1.429rem; }
+.create-user-form .form-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem 1.5rem; }
+.create-user-form .form-group { display: flex; flex-direction: column; min-width: 0; }
+.create-user-form label { font-size: var(--fs-sm); font-weight: 600; margin-bottom: .429rem; color: var(--text-dark); }
+.create-user-form .form-control,.create-user-form .form-select { width: 100%; min-width: 0; min-height: 44px; font-family: inherit; color: var(--text-dark); background-color: #fff; }
+.create-user-form .form-control[readonly] { background: #f7f9fc; color: var(--text-muted); }
+.create-user-form .field-hint { margin-top: .35rem; color: var(--text-muted); font-size: var(--fs-xs); line-height: 1.45; }
+.create-user-form .form-actions { display: flex; justify-content: flex-end; align-items: center; gap: .75rem; margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.create-user-form .btn-cancel { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: .55rem 1.05rem; border: 1px solid var(--border); border-radius: .429rem; background: #fff; color: var(--text-dark); font-size: var(--fs-sm); font-weight: 600; }
+.create-user-form .btn-cancel:hover { background: var(--row-hover); }
+.create-user-form .btn-primary-custom { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 40px; }
+.create-user-form .form-feedback { display: none; margin: 1rem 0 0; padding: .75rem 1rem; border-radius: .5rem; background: #e3f6ea; color: #1f7a43; font-size: var(--fs-sm); }
+.create-user-form .form-feedback.is-visible { display: block; }
+@media (max-width: 767.98px) { .create-user-card { max-width: 100%; } .create-user-form { padding: 1rem; } .create-user-form .form-grid { grid-template-columns: minmax(0,1fr); gap: 1rem; } .create-user-card .card-head { padding: 1rem; } .create-user-form .form-actions { flex-wrap: wrap; } }
