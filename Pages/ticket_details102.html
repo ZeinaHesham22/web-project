@@ -127,44 +127,6 @@
     </section>
   </main>
 </div>
-<script>
-const statusSelect = document.getElementById('statusSelect');
-document.getElementById('updateStatus').addEventListener('click', () => {
-  document.getElementById('currentStatus').textContent = statusSelect.value;
-  alert('Ticket status updated to: ' + statusSelect.value);
-});
-document.querySelectorAll('[data-tab]').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('[data-tab]').forEach(b => b.classList.remove('active'));
-    button.classList.add('active');
-    const content = document.getElementById('tabContent');
-    content.textContent = button.dataset.tab === 'description'
-      ? 'We are facing network connectivity issues. The internet is not working on all devices in the office.'
-      : 'Recent activity and comments for this ticket are shown in the Updates timeline on the right.';
-  });
-});
-document.getElementById('commentForm').addEventListener('submit', event => {
-  event.preventDefault();
-  const input = document.getElementById('comment');
-  const message = input.value.trim();
-  if (!message) return;
-  const item = document.createElement('div');
-  item.className = 'timeline-item';
-  const avatar = document.createElement('span');
-  avatar.className = 'timeline-avatar';
-  avatar.innerHTML = '<i class="bi bi-person-fill"></i>';
-  const body = document.createElement('div');
-  const name = document.createElement('strong');
-  name.textContent = 'Omar Ibrahim';
-  const paragraph = document.createElement('p');
-  paragraph.textContent = message;
-  const time = document.createElement('time');
-  time.textContent = new Date().toLocaleString();
-  body.append(name, paragraph, time);
-  item.append(avatar, body);
-  document.getElementById('timeline').prepend(item);
-  input.value = '';
-});
-</script>
+
 </body>
 </html>
