@@ -139,7 +139,7 @@ document.querySelectorAll('[data-tab]').forEach(button => {
     button.classList.add('active');
     const content = document.getElementById('tabContent');
     content.textContent = button.dataset.tab === 'description'
-      ? 'We are facing network connectivity issues. The internet is not working on all devices in the office.'
+      ? 'We need to install new software on the computer. The required application is not installed, preventing the employee from completing their work.'
       : 'Recent activity and comments for this ticket are shown in the Updates timeline on the right.';
   });
 });
