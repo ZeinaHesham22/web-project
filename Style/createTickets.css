@@ -1,0 +1,85 @@
+/* =========================================================
+   createTicket.css  —  ستايل صفحة Create Ticket بس
+   كل حاجة جوه .ticket-card عشان ما تأثرش على باقي الصفحة
+   (السايدبار والـ topbar والـ body موجودين في layout.css و style.css)
+   ========================================================= */
+
+.ticket-card {
+  max-width: 48rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.6rem 1.8rem;
+}
+
+.ticket-card h2 {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+
+.ticket-card .subtitle {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: 1.4rem;
+}
+
+.ticket-card .field { margin-bottom: 1.1rem; }
+
+/* عمودين جنب بعض (Category + Priority) */
+.ticket-card .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+
+.ticket-card label {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: .4rem;
+}
+
+.ticket-card input,
+.ticket-card select,
+.ticket-card textarea {
+  width: 100%;
+  padding: .6rem .85rem;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  font-size: var(--fs-sm);
+  font-family: inherit;
+  color: var(--text-dark);
+  background: #fff;
+  outline: none;
+}
+
+.ticket-card input:focus,
+.ticket-card select:focus,
+.ticket-card textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 109, 255, .12);
+}
+
+.ticket-card textarea { resize: vertical; min-height: 7rem; }
+
+.ticket-card .btn {
+  width: 100%;
+  margin-top: .4rem;
+  padding: .7rem;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: .5rem;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+.ticket-card .btn:hover { background: var(--primary-hover); }
+
+/* موبايل */
+@media (max-width: 600px) {
+  .ticket-card { padding: 1.2rem; }
+  .ticket-card .form-row { grid-template-columns: 1fr; }
+}
