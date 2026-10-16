@@ -73,13 +73,15 @@
         .in-progress { color: #d97706; background-color: #fef3c7; }
         .resolved { color: #059669; background-color: #d1fae5; }
         .btn-view {
+            display: inline-block;
             background-color: #eff6ff;
             color: #2563eb;
-            border: none;
+            text-decoration: none;
             padding: 6px 12px;
             border-radius: 6px;
-            cursor: pointer;
             font-weight: 500;
+            font-size: 13px;
+            text-align: center;
         }
         .btn-view:hover {
             background-color: #dbeafe;
@@ -91,7 +93,8 @@
     <div class="container">
         <h1>All Tickets</h1>
         <p>Manage and track all support tickets.</p>
-    
+
+        <!-- فلاتر البحث -->
         <div class="filters">
             <select>
                 <option>All Categories</option>
@@ -127,7 +130,7 @@
                     <td><span class="badge medium">Medium</span></td>
                     <td><span class="badge open">Open</span></td>
                     <td>2025-04-19 10:15</td>
-                    <td><button class="btn-view">View</button></td>
+                    <td><a href="ticket_details103.html" class="btn-view">View</a></td>
                 </tr>
                 <tr>
                     <td>#102</td>
@@ -137,7 +140,7 @@
                     <td><span class="badge high">High</span></td>
                     <td><span class="badge in-progress">In Progress</span></td>
                     <td>2025-04-20 10:30</td>
-                    <td><button class="btn-view">View</button></td>
+                    <td><a href="ticket-details.html?id=102" class="btn-view">View</a></td>
                 </tr>
                 <tr>
                     <td>#101</td>
@@ -146,8 +149,8 @@
                     <td>Hardware</td>
                     <td><span class="badge medium">Medium</span></td>
                     <td><span class="badge in-progress">In Progress</span></td>
-                    <td>2025-04-18 16:40</td>
-                    <td><button class="btn-view">View</button></td>
+                    <td>2025-04-18 4:40</td>
+                    <td><a href="ticket_details101.html" class="btn-view">View</a></td>
                 </tr>
                 <tr>
                     <td>#100</td>
@@ -156,8 +159,8 @@
                     <td>Software</td>
                     <td><span class="badge low">Low</span></td>
                     <td><span class="badge resolved">Resolved</span></td>
-                    <td>2025-04-17 14:20</td>
-                    <td><button class="btn-view">View</button></td>
+                    <td>2025-04-17 2:20</td>
+                    <td><a href="ticket_details100.html" class="btn-view">View</a></td>
                 </tr>
             </tbody>
         </table>
