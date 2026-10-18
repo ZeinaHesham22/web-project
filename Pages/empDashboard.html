@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chanrset="utf-8">
+    <title>Employee Dashboard</title>
+    <!-- ربط ملف الـ CSS الأساسي للمشروع -->
+    <link rel="stylesheet" href="../Style/empDashboard.css">
+</head>
+<body>
+
+    <!-- القائمة الجانبية البسيطة -->
+    <div class="sidebar">
+        <h2>IT Support System</h2>
+        <ul>
+            <li><a href="empDashboard.html">Dashboard</a></li>
+            <li><a href="createTicket.html">Create Ticket</a></li>
+            <li><a href="myTickets.html">My Tickets</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- محتوى الصفحة الرئيسي -->
+    <div class="main-content">
+
+        <!-- اسم الموظف فوق -->
+        <p>Sara Mohamed (Employee)</p>
+        <hr>
+
+        <!-- رسالة الترحيب -->
+        <h1>Welcome, Sara Mohamed!</h1>
+        <p>Here's what's happening with your support tickets.</p>
+        <a href="createTicket.html">+ Create New Ticket</a>
+
+        <br><br>
+
+        <!-- أرقام الإحصائيات البسيطة -->
+        <h3>Total Tickets: 3</h3>
+        <h3>Open: 1</h3>
+        <h3>In Progress: 1</h3>
+        <h3>Resolved: 1</h3>
+
+        <br>
+
+        <!-- جدول التذاكر الأخيرة -->
+        <h2>Recent Tickets</h2>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Created At</th>
+            </tr>
+            <tr>
+                <td>#103</td>
+                <td>Email issue</td>
+                <td>Medium</td>
+                <td>Open</td>
+                <td>2025-04-19 10:15</td>
+            </tr>
+            <tr>
+                <td>#101</td>
+                <td>Printer not working</td>
+                <td>Medium</td>
+                <td>In Progress</td>
+                <td>2025-04-18 18:40</td>
+            </tr>
+            <tr>
+                <td>#097</td>
+                <td>Software installation</td>
+                <td>Low</td>
+                <td>Resolved</td>
+                <td>2025-04-16 09:20</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
