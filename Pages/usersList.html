@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Users List</title>
+    <!-- ربط ملف الـ CSS الأساسي للمشروع -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- القائمة الجانبية البسيطة -->
+    <div class="sidebar">
+        <h2>IT System</h2>
+        <ul>
+            <li><a href="itDashboard.html">Dashboard</a></li>
+            <li><a href="createUser.html">Create User</a></li>
+            <li><a href="usersList.html">All Users</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- محتوى الصفحة -->
+    <div class="main-content">
+        <h1>Users Management</h1>
+        <p>هذه قائمة بكل المستخدمين الموجودين في النظام.</p>
+
+        <!-- جدول بسيط جداً -->
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ahmed Hassan</td>
+                <td>ahmed@company.com</td>
+                <td>IT</td>
+                <td>it</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sara Mohamed</td>
+                <td>sara@company.com</td>
+                <td>HR</td>
+                <td>employee</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ali Rabie</td>
+                <td>ali@company.com</td>
+                <td>Finance</td>
+                <td>employee</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

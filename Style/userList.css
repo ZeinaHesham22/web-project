@@ -1,0 +1,63 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* القائمة الجانبية البسيطة */
+.sidebar {
+    width: 220px;
+    background-color: #1e3a8a;
+    color: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* محتوى الصفحة الرئيسي */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* تنسيق الجدول البسيط */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e2e8f0;
+}
