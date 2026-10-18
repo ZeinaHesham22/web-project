@@ -11,7 +11,7 @@ button { cursor: pointer; }
 .primary-btn:hover { background: var(--blue-hover); }
 @media (max-width: 600px) { .primary-btn { max-width: 100%; } }
 
-/* Logout page styles */
+
 .logout-page { min-height: 100vh; padding: 28px; }
 .logout-page h1 { font-size: 28px; margin: 0 0 28px; }
 .logout-stage { min-height: calc(100vh - 120px); border: 1px solid var(--border); border-radius: 9px; background: #f7f9fc; display: grid; place-items: center; padding: 24px; }
