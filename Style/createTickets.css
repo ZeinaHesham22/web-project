@@ -1,8 +1,3 @@
-/* =========================================================
-   createTicket.css  —  ستايل صفحة Create Ticket بس
-   كل حاجة جوه .ticket-card عشان ما تأثرش على باقي الصفحة
-   (السايدبار والـ topbar والـ body موجودين في layout.css و style.css)
-   ========================================================= */
 
 .ticket-card {
   max-width: 48rem;
@@ -25,7 +20,7 @@
 
 .ticket-card .field { margin-bottom: 1.1rem; }
 
-/* عمودين جنب بعض (Category + Priority) */
+
 .ticket-card .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,7 +73,7 @@
 }
 .ticket-card .btn:hover { background: var(--primary-hover); }
 
-/* موبايل */
+
 @media (max-width: 600px) {
   .ticket-card { padding: 1.2rem; }
   .ticket-card .form-row { grid-template-columns: 1fr; }
